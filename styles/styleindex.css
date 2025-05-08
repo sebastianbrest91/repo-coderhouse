@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: pink;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+}
+
+
+.header{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+}
+.logoestudiofem{
+    height: 100%;
+    width: 100%;
+}
+.navheader{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+.navheader li{
+    background-color:#89004f;
+    border: 1px solid #ff69b4;
+    border-radius: 10px;
+    padding: 1px;
+    margin: 1px;
+    text-align: center;
+}
+.navegador{
+    color:#ff69b4;
+    font-family: 'copeland';
+    text-decoration: none;
+}
+.whatsapfijo{
+    position: fixed;
+    bottom: 7px;
+    right: 10px;
+}
+.whatsapfijoimagen{
+    height: 50px;
+    width: 50px
+}
+
+.mainindex{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-content: center;
+}
+.indexvideo{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+}
+.maincorporales{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+h1{
+    color:#c33b80;
+    font-size: 2rem;
+    font-family: 'copeland';
+    text-align: center;
+}
+h3{
+    color:#c33b80;
+    font-size: 40px;
+    font-family: 'copeland';
+    text-align: center;
+}
+p{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.titulo{
+    color:#c33b80;
+    font-size: 40px;
+    font-family: 'copeland';
+    text-decoration: none;
+}
+.macaolmedo{
+    color:black;
+    font-size: 80px;
+    font-family: 'patung';
+    font-weight: 100;
+}
+.parrafo{
+    color:black;
+    font-size: 20px;
+    text-align:left;
+}
+#planilla{
+    color:#c33b80;
+    font-size: 40px;
+    font-family: 'patung';
+}
+
+.footer{
+    background-color: #89004f;
+    text-align: center;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+
+}
+#derechosreservados{
+    color:#ff69b4;
+    font-size: 20px;
+    font-family: 'patung';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.item{
+    height: 75%;
+    width: 75%;
+}
+
+.a{
+    background-color: white;
+    grid-area: a;
+}
+
+.b{
+    background-color: blue;
+    grid-area: b;
+}
+
+.c{
+    background-color: green;
+    grid-area: c;
+}
+
+.d{
+    background-color: red;
+    grid-area: d;
+}
+
+.e{
+    background-color: darkgoldenrod;
+    grid-area: e;
+}
+
+.f{
+    background-color: darkorange;
+    grid-area: f;
+}
+
+.g{
+    background-color: fuchsia;
+    grid-area: g;
+}
+
+
