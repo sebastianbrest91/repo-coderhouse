@@ -25,13 +25,12 @@ body{
 .navheader{
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    justify-content: center;
-    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
 }
 .navheader li{
     background-color:#89004f;
-    border: 1px solid #ff69b4;
+    border: 2px solid black;
     border-radius: 10px;
     text-align: center;
 }
@@ -39,6 +38,7 @@ body{
     color:#ff69b4;
     font-family: 'copeland';
     text-decoration: none;
+    padding: 10px;
 }
 .whatsapfijo{
     position: fixed;
@@ -69,17 +69,7 @@ body{
     flex-direction: column;
     text-align: center;
 }
-.maincorporales{
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-}
-.navboottrap{
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    justify-content: center;
-    align-content: center;
-}
+
 h1{
     color:#c33b80;
     font-size: 2rem;
@@ -120,6 +110,16 @@ p{
     font-family: 'patung';
 }
 
+.mainproductos{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
 
 .footer{
     background-color: #89004f;
@@ -133,58 +133,3 @@ p{
     font-size: 20px;
     font-family: 'patung';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.item{
-    height: 75%;
-    width: 75%;
-}
-
-.a{
-    background-color: white;
-    grid-area: a;
-}
-
-.b{
-    background-color: blue;
-    grid-area: b;
-}
-
-.c{
-    background-color: green;
-    grid-area: c;
-}
-
-.d{
-    background-color: red;
-    grid-area: d;
-}
-
-.e{
-    background-color: darkgoldenrod;
-    grid-area: e;
-}
-
-.f{
-    background-color: darkorange;
-    grid-area: f;
-}
-
-.g{
-    background-color: fuchsia;
-    grid-area: g;
-}
-
-
