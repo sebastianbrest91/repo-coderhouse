@@ -1,0 +1,24 @@
+$colorbase: pink;
+$colorhalloween: orange;
+$colorblackfriday: black;
+
+
+@font-face {
+    font-family: 'patungregular';
+    src: url('patung-webfont.woff2') format('woff2'), url('patung-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'copelandregular';
+    src: url('copeland-webfont.woff2') format('woff2'), url('copeland-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin celular{
+    @media (max-width: 425px){
+        @content
+    }
+}

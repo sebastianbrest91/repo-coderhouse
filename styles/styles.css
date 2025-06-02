@@ -1,0 +1,189 @@
+.maincontacto {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.labelplanilla {
+  color: #c33b80;
+  font-size: 40px;
+  font-family: "patung";
+}
+
+h1 {
+  color: #ff69b4;
+  font-size: 50px;
+  font-family: "copeland";
+  text-align: center;
+}
+
+h3 {
+  color: #ff69b4;
+  font-size: 30px;
+  text-align: center;
+}
+
+.maindomiciliarios {
+  background-color: pink;
+}
+.maindomiciliarios h1 {
+  color: #ff69b4;
+  font-size: 50px;
+  font-family: "copeland";
+  text-align: center;
+}
+
+.section1index h1 {
+  color: #ff69b4;
+  font-size: 50px;
+  font-family: "copeland";
+  text-align: center;
+}
+.section1index iframe {
+  height: 50%;
+  width: 100%;
+}
+.section1index p {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.section2index h1 {
+  color: #ff69b4;
+  font-size: 50px;
+  font-family: "copeland";
+  text-align: center;
+}
+.section2index img {
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+.section2index p {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.mainproductos {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.mainproductos h3 {
+  color: #ff69b4;
+  font-size: 40px;
+  font-family: "copeland";
+  text-align: center;
+}
+.mainproductos p {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "patungregular";
+  src: url("patung-webfont.woff2") format("woff2"), url("patung-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "copelandregular";
+  src: url("copeland-webfont.woff2") format("woff2"), url("copeland-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: pink;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+}
+
+header {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+}
+header img {
+  height: 100%;
+  width: 100%;
+}
+header nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+header nav li {
+  background-color: #89004f;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+header nav li a {
+  color: #ff69b4;
+  font-family: "copeland";
+  text-decoration: none;
+  font-size: 30px;
+}
+header .whatsapfijo {
+  position: fixed;
+  bottom: 7px;
+  right: 10px;
+  animation: pulse 1s infinite;
+}
+header .whatsapfijo img {
+  height: 50px;
+  width: 50px;
+}
+
+footer {
+  background-color: #89004f;
+  text-align: center;
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+footer p {
+  color: #ff69b4;
+  font-size: 40px;
+  font-family: "patung";
+}
+
+main {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 425px) {
+  .section2index {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .section1index {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
