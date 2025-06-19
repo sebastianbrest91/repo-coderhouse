@@ -1,4 +1,4 @@
-$colorbase: pink;
+$colorbase: pink ;
 $colorhalloween: orange;
 $colorblackfriday: black;
 
@@ -18,7 +18,7 @@ $colorblackfriday: black;
 }
 
 @mixin celular{
-    @media (max-width: 425px){
-        @content
+    @media (max-width: 426px){
+        @content;
     }
 }

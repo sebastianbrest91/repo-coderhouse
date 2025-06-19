@@ -1,11 +1,12 @@
-@import "blackfriday";
-@import "contacto";
-@import "corporales";
-@import "domiciliarios";
-@import "halloween";
-@import "index";
-@import "productos";
 @import "variables";
+@import "header";
+@import "footer";
+@import "index";
+@import "tratamientos";
+@import "rutinas";
+@import "contacto";
+@import "productos";
+
 
 *{
     margin: 0;
@@ -13,78 +14,55 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: $colorbase;
     display: grid;
-    height: 100vh;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas:
+    "header header header"
+    ". main ."
+    "footer footer footer";
 }
 
-header{
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.navbootstrap nav {
+    margin-right: 25px;
     display: flex;
-    flex-direction: column;
-    img{
-        height: 100%;
-        width: 100%;
-    }
-    nav{
-        ul{
-            list-style: none;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            justify-content: space-between;
-        }
-        li{
-            background-color: #89004f;
-            padding: 10px;
-            border: 2px solid black;
-            border-radius: 10px;
-            text-align: center;
-            a{
-                color: #ff69b4;
-                font-family: 'copeland';
-                text-decoration: none;
-                font-size: 30px;
-            }
-        } 
-    }
-    .whatsapfijo{
-        position: fixed;
-        bottom: 7px;
-        right: 10px;
-        img{
-            height: 50px;
-            width: 50px
-        }
-        animation: pulse 1s infinite;
-    }
+    justify-content: center;
 }
 
-footer{
-    background-color: #89004f;
-    text-align: center;
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-    p{
-        color:#ff69b4;
-        font-size: 40px;
-        font-family: 'patung';
-    }
-}
-main{
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    display: flex;
-    flex-direction: column;
-}
-
-.section2index{
-    @include celular{
+@include celular{
+    .section2index{
         display: none;
     }
+    .nav{
+        nav{
+            ul{
+                grid-template-columns: 1fr;
+            } 
+        }
     }
+    .navbootstrap{
+        nav{
+            ul{
+                grid-template-columns: 1fr;
+
+            } 
+        }
+    }
+} 
+
 
 
